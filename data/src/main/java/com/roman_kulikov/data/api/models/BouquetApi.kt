@@ -11,6 +11,9 @@ data class BouquetApi(
     override val name: String,
 
     @Json(name = "price")
-    override val price: Double
+    override val price: Double,
+
+    @Json(name = "design_id")
+    override val designId: Int? = null
 
 ) : Bouquet

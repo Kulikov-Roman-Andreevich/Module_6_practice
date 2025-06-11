@@ -8,6 +8,9 @@ data class FlowerApi(
     override val id: Int,
 
     @Json(name = "name")
-    override val name: String
+    override val name: String,
+
+    @Json(name = "provide_country")
+    override val provideCountry: String? = null
 
 ) : Flower

@@ -6,4 +6,6 @@ import retrofit2.http.GET
 interface BouquetRetrofit {
     @GET("/bouquets.json")
     suspend fun getBouquetsData(): BouquetResponse
+
+
 }

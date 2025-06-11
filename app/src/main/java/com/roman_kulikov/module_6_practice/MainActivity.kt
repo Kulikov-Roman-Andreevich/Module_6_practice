@@ -10,6 +10,7 @@ import com.roman_kulikov.data.room.entities.UserEntity
 import com.roman_kulikov.domain.repositories.BouquetRepository
 import com.roman_kulikov.domain.repositories.OrderRepository
 import com.roman_kulikov.domain.repositories.UserRepository
+import com.roman_kulikov.module_6_practice.car.Car
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
             userRepository.addUser(UserEntity(email = "gg@g.ggg"))
             bouquetRepository.fetchBouquets()
             //orderRepository.addOrderItem(1, 1)
+            Car.Builder().build()
         }
     }
 }
